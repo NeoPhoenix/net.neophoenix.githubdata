@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/language.xsd" languagecode="en">
+	<category name="wcf.acp.option">
+		<!-- Allgemein -->
+		<item name="wcf.acp.option.category.githubwebhook"><![CDATA[GitHub Webhook]]></item>	
+		<item name="wcf.acp.option.category.githubwebhook.description"><![CDATA[]]></item>
+		
+		<!-- Kategorien -->
+		<item name="wcf.acp.option.category.githubwebhook_general"><![CDATA[General]]></item>	
+		<item name="wcf.acp.option.category.githubwebhook_general.description"><![CDATA[General information concerning the GitHub Webhook]]></item>
+
+		<item name="wcf.acp.option.category.githubwebhook_special"><![CDATA[Advanced settings]]></item>	
+		<item name="wcf.acp.option.category.githubwebhook_special.description"><![CDATA[Advanced settings concerning the posting.]]></item>
+		
+		<!-- Allgemeine Einstellungen -->
+		<item name="wcf.acp.option.githubwebhook_activate"><![CDATA[Activate module]]></item>
+		<item name="wcf.acp.option.githubwebhook_activate.description"><![CDATA[Activates the module]]></item>
+		
+		<item name="wcf.acp.option.githubwebhook_posting"><![CDATA[Postingtype]]></item>
+		<item name="wcf.acp.option.githubwebhook_posting.description"><![CDATA[Selecting the postingtype]]></item>
+		
+		<item name="wcf.acp.option.githubwebhook_userid"><![CDATA[Author-ID]]></item>
+		<item name="wcf.acp.option.githubwebhook_userid.description"><![CDATA[The User-ID which is posting the content]]></item>
+		
+		<item name="wcf.acp.option.githubwebhook_username"><![CDATA[Authorname]]></item>
+		<item name="wcf.acp.option.githubwebhook_username.description"><![CDATA[The authorname which is posting the content (if User-ID is invalid)]]></item>
+
+		<item name="wcf.acp.option.githubwebhook_boardid"><![CDATA[Board-ID]]></item>
+		<item name="wcf.acp.option.githubwebhook_boardid.description"><![CDATA[The Board-ID in which the content is posted (if a new thread should be created))]]></item>
+		
+		<item name="wcf.acp.option.githubwebhook_threadid"><![CDATA[Thread-ID]]></item>
+		<item name="wcf.acp.option.githubwebhook_threadid.description"><![CDATA[The Thread-ID in which the content is posted (if a reply in an existing thread should be created)]]></item>
+		
+		<item name="wcf.acp.option.githubwebhook_title_template"><![CDATA[Template of the title]]></item>
+		<item name="wcf.acp.option.githubwebhook_title_template.description"><![CDATA[Formating the title. Variables:
+		<table border="0">
+			<tr><td><strong>%title</strong></td><td>Title of the push</td></tr>
+			<tr><td><strong>%commit</strong></td><td>Text of the commit</td></tr>		
+			<tr><td><strong>%url</strong></td><td>URL to the commit (github.com)</td></tr>
+			<tr><td><strong>%author</strong></td><td>Name of the author</td></tr>
+			<tr><td><strong>%email</strong></td><td>EMail of the author</td></tr>
+			<tr><td><strong>%repo_url</strong></td><td>Repo-URL</td></tr>
+			<tr><td><strong>%repo_name</strong></td><td>Name of the repo</td></tr>
+			<tr><td><strong>%repo_description</strong></td><td>Description of the repo</td></tr>
+			<tr><td><strong>%repo_watchers</strong></td><td>Watcher count</td></tr>
+			<tr><td><strong>%repo_forks</strong></td><td>Fork count</td></tr>
+			<tr><td><strong>%repo_owner_mail</strong></td><td>EMail of the owner</td></tr>
+			<tr><td><strong>%repo_owner_name</strong></td><td>Name of the owner</td></tr>
+		</table>]]></item>
+		
+		<item name="wcf.acp.option.githubwebhook_title_len"><![CDATA[Titellen]]></item>
+		<item name="wcf.acp.option.githubwebhook_title_len.description"><![CDATA[Limits the length of the title.]]></item>
+		
+		<item name="wcf.acp.option.githubwebhook_content_template"><![CDATA[Template of the content]]></item>
+		<item name="wcf.acp.option.githubwebhook_content_template.description"><![CDATA[Formating the content. Variables:
+		<table border="0">
+			<tr><td><strong>%title</strong></td><td>Title of the push</td></tr>
+			<tr><td><strong>%commit</strong></td><td>Text of the commit</td></tr>		
+			<tr><td><strong>%url</strong></td><td>URL to the commit (github.com)</td></tr>
+			<tr><td><strong>%author</strong></td><td>Name of the author</td></tr>
+			<tr><td><strong>%email</strong></td><td>EMail of the author</td></tr>
+			<tr><td><strong>%repo_url</strong></td><td>Repo-URL</td></tr>
+			<tr><td><strong>%repo_name</strong></td><td>Name of the repo</td></tr>
+			<tr><td><strong>%repo_description</strong></td><td>Description of the repo</td></tr>
+			<tr><td><strong>%repo_watchers</strong></td><td>Watcher count</td></tr>
+			<tr><td><strong>%repo_forks</strong></td><td>Fork count</td></tr>
+			<tr><td><strong>%repo_owner_mail</strong></td><td>EMail of the owner</td></tr>
+			<tr><td><strong>%repo_owner_name</strong></td><td>Name of the owner</td></tr>
+		</table>]]></item>
+		
+		<item name="wcf.acp.option.githubwebhook_html"><![CDATA[HTML]]></item>
+		<item name="wcf.acp.option.githubwebhook_html.description"><![CDATA[Activate HTML]]></item>
+		
+		<item name="wcf.acp.option.githubwebhook_whitelist"><![CDATA[Repo whistelist]]></item>
+		<item name="wcf.acp.option.githubwebhook_whitelist.description"><![CDATA[Whitelisting a repo. Format: Owner/Repo using regular expressions]]></item>
+		
+		<!-- Sprachvariablen der Optionen -->
+		<item name="wcf.acp.option.type.githubwebhook_general_thread"><![CDATA[Creating a thread]]></item>
+		<item name="wcf.acp.option.type.githubwebhook_general_post"><![CDATA[Creating a normal post]]></item>
+	</category>
+</language>

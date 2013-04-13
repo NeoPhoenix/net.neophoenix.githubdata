@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="net.neophoenix.githubdata" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/package.xsd">
+	<packageinformation>
+		<packagename>GitHub Webhook</packagename>
+		<packagedescription><![CDATA[GitHub Webhook Integration]]></packagedescription>
+		<version>1.0.1</version>
+		<date>2013-02-28</date>
+		<plugin>com.woltlab.wbb</plugin>
+	</packageinformation>
+	
+	<authorinformation>
+		<author>NeoPhoenix</author>
+		<authorurl>http://www.neophoenix.net/</authorurl>
+	</authorinformation>
+	
+	<requiredpackages>
+		<requiredpackage>com.woltlab.wbb</requiredpackage>
+	</requiredpackages>
+	
+	<instructions type="install">
+		<languages languagecode="de-informal">languages/de-informal.xml</languages>
+		<languages languagecode="de">languages/de.xml</languages>
+		<languages languagecode="en">languages/en.xml</languages>
+		<files>files.tar</files>
+		<options>options/options.xml</options>
+	</instructions>
+</package>

@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<!DOCTYPE data SYSTEM "http://www.woltlab.com/DTD/options.dtd">
+<data>
+    <import>
+		<categories>
+			<category name="githubwebhook"/>
+			<category name="githubwebhook_general">
+				<parent>githubwebhook</parent>
+			</category>
+			<category name="githubwebhook_special">
+				<parent>githubwebhook</parent>
+			</category>
+		</categories>		
+        <options>
+			<!-- Allgemeine Einstellungen -->
+			<option name="githubwebhook_activate">
+				<categoryname>githubwebhook_general</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+				<showorder>1</showorder>
+			</option>
+			<option name="githubwebhook_posting">
+				<categoryname>githubwebhook_general</categoryname>
+				<optiontype>radiobuttons</optiontype>
+<selectoptions><![CDATA[0:wcf.acp.option.type.githubwebhook_general_thread
+1:wcf.acp.option.type.githubwebhook_general_post]]></selectoptions>
+				<defaultvalue>0</defaultvalue>
+				<showorder>2</showorder>
+			</option>
+			<option name="githubwebhook_userid">
+				<categoryname>githubwebhook_general</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<showorder>3</showorder>
+			</option>
+			<option name="githubwebhook_username">
+				<categoryname>githubwebhook_general</categoryname>
+				<optiontype>textarea</optiontype>
+				<defaultvalue><![CDATA[GitHub Bot]]></defaultvalue>
+				<showorder>4</showorder>
+			</option>
+			<option name="githubwebhook_boardid">
+				<categoryname>githubwebhook_general</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<showorder>5</showorder>
+			</option>
+			<option name="githubwebhook_threadid">
+				<categoryname>githubwebhook_general</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<showorder>6</showorder>
+			</option>
+			<option name="githubwebhook_whitelist">
+				<categoryname>githubwebhook_general</categoryname>
+				<optiontype>textarea</optiontype>
+				<defaultvalue>(.*)/(.*)</defaultvalue>
+				<showorder>7</showorder>
+			</option>
+			
+			<!-- Erweiterte Einstellungen -->
+			<option name="githubwebhook_title_template">
+				<categoryname>githubwebhook_special</categoryname>
+				<optiontype>textarea</optiontype>
+				<defaultvalue><![CDATA[%repo_name - %title]]></defaultvalue>
+				<showorder>1</showorder>
+			</option>
+			<option name="githubwebhook_title_len">
+				<categoryname>githubwebhook_special</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>32</defaultvalue>
+				<showorder>2</showorder>
+			</option>
+			<option name="githubwebhook_content_template">
+				<categoryname>githubwebhook_special</categoryname>
+				<optiontype>textarea</optiontype>
+				<defaultvalue><![CDATA[Commit: %commit<br/>Autor: %author ([email]%email[/email])<br/>GitHub: %url]]></defaultvalue>
+				<showorder>3</showorder>
+			</option>
+			<option name="githubwebhook_html">
+				<categoryname>githubwebhook_special</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<showorder>4</showorder>
+			</option>
+        </options>
+    </import>
+</data>
