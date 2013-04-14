@@ -62,7 +62,7 @@
 			<option name="githubwebhook_title_template">
 				<categoryname>githubwebhook_special</categoryname>
 				<optiontype>textarea</optiontype>
-				<defaultvalue><![CDATA[%repo_name - %title]]></defaultvalue>
+				<defaultvalue><![CDATA[%repo_name - %commit]]></defaultvalue>
 				<showorder>1</showorder>
 			</option>
 			<option name="githubwebhook_title_len">
@@ -74,7 +74,7 @@
 			<option name="githubwebhook_content_template">
 				<categoryname>githubwebhook_special</categoryname>
 				<optiontype>textarea</optiontype>
-				<defaultvalue><![CDATA[Commit: %commit<br/>Autor: %author ([email]%email[/email])<br/>GitHub: %url]]></defaultvalue>
+				<defaultvalue><![CDATA[[b]GitHub Update[/b]<br/>[b]Commit:[/b] %commit<br/>[b]Autor:[/b] %author ([email]%email[/email])<br/>[b]Direktlink:[/b] [url=%url]%url[/url]]]></defaultvalue>
 				<showorder>3</showorder>
 			</option>
 			<option name="githubwebhook_html">

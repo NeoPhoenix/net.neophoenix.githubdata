@@ -20,7 +20,7 @@
 
 	class GHWebhook
 	{
-		//Vars		
+		//Vars
 		public $userClass = null;
 		public $plugindata = array
 				(
