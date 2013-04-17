@@ -23,5 +23,6 @@
 		<languages languagecode="en">languages/en.xml</languages>
 		<files>files.tar</files>
 		<options>options/options.xml</options>
+		<sql>sql/install.sql</sql>
 	</instructions>
 </package>

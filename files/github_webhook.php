@@ -49,6 +49,12 @@
 			}
 			foreach($commits as $commit)
 			{
+				$sql = 'SELECT * FROM wcf'.WCF_N.'_githubdata_hash WHERE hash="'.md5($commit['id']).'"';
+				$result = WCF::getDB()->sendQuery($sql);
+				if(mysql_num_rows($result)) continue;
+				$sql = 'INSERT INTO wcf'.WCF_N.'_githubdata_hash (timestamp,hash) VALUES ('.time().',"'.md5($commit['id']).'")';
+				WCF::getDB()->sendQuery($sql);
+				
 				$search_for = array('%commit','%author','%email','%url','%repo_url','%repo_name','%repo_description','%repo_watchers','%repo_forks','%repo_owner_mail','%repo_owner_name');
 				$replace_with = array(htmlspecialchars($commit['message']),htmlspecialchars($commit['author']['name']),htmlspecialchars($commit['author']['email']),htmlspecialchars($commit['url']),htmlspecialchars($post_data['repository']['url']),htmlspecialchars($post_data['repository']['name']),htmlspecialchars($post_data['repository']['description']),htmlspecialchars($post_data['repository']['watchers']),htmlspecialchars($post_data['repository']['forks']),htmlspecialchars($post_data['repository']['owner']['email']),htmlspecialchars($post_data['repository']['owner']['name']));
 
